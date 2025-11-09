@@ -1,0 +1,4 @@
+
+Customer Feedback Log:
+- 2025-04-05 | CustID:CUST100 | Product:P1001 | Rating:4 | Comment: "Drill works well but battery life shorter than expected."
+- 2025-04-12 | CustID:CUST101 | Product:P1004 | Rating:5 | Comment: "Boxes arrived sturdy and on time."

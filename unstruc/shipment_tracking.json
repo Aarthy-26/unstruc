@@ -1,0 +1,21 @@
+{
+  "SHP1001": [
+    {
+      "timestamp": "2025-04-02T08:00:00",
+      "location": "Chennai Port",
+      "status": "Arrived"
+    },
+    {
+      "timestamp": "2025-04-03T14:00:00",
+      "location": "WH-A",
+      "status": "Delivered"
+    }
+  ],
+  "SHP1002": [
+    {
+      "timestamp": "2025-04-12T09:00:00",
+      "location": "In Transit",
+      "status": "Customs Hold"
+    }
+  ]
+}

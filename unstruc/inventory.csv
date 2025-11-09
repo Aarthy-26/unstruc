@@ -1,0 +1,5 @@
+item_id,name,category,warehouse,qty,reorder_level
+P1001,18V Cordless Drill,Tools,WH-A,120,30
+P1002,Lithium Battery Pack,Electronics,WH-B,450,100
+P1003,Steel Bolts - M8,Hardware,WH-A,5000,2000
+P1004,Packaging Box - Large,Packaging,WH-C,800,150

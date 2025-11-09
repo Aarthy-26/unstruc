@@ -1,0 +1,5 @@
+
+Logistics Daily Notes - Apr 2025
+- 2025-04-02: WH-A conducting cycle count. Found discrepancy for P1003 ~ -150 units.
+- 2025-04-11: Container delayed at Chennai port due to documentation mismatch (PO PO-2025-002).
+- 2025-04-20: Temp spike in Warehouse B; precautionary relocation of Lithium Battery Pack to cooler racks.

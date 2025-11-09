@@ -1,0 +1,12 @@
+{
+  "S001": {
+    "lead_time_days": 7,
+    "preferred_terms": "Net30",
+    "last_audit": "2024-11-20"
+  },
+  "S002": {
+    "lead_time_days": 21,
+    "preferred_terms": "Prepaid",
+    "last_audit": "2023-09-15"
+  }
+}

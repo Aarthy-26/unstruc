@@ -1,0 +1,42 @@
+[
+  {
+    "po_id": "PO-2025-001",
+    "supplier_id": "S001",
+    "date": "2025-04-01",
+    "items": [
+      {
+        "item_id": "P1001",
+        "qty": 50
+      },
+      {
+        "item_id": "P1003",
+        "qty": 2000
+      }
+    ],
+    "status": "delivered"
+  },
+  {
+    "po_id": "PO-2025-002",
+    "supplier_id": "S002",
+    "date": "2025-04-10",
+    "items": [
+      {
+        "item_id": "P1002",
+        "qty": 300
+      }
+    ],
+    "status": "in_transit"
+  },
+  {
+    "po_id": "PO-2025-003",
+    "supplier_id": "S005",
+    "date": "2025-03-28",
+    "items": [
+      {
+        "item_id": "P1004",
+        "qty": 500
+      }
+    ],
+    "status": "pending"
+  }
+]

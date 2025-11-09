@@ -1,0 +1,3 @@
+shipment_id,po_id,carrier,eta,status,notes
+SHP1001,PO-2025-001,BlueLine Logistics,2025-04-05,Delivered,Arrived with minor packaging damage - inspected
+SHP1002,PO-2025-002,FastTrack,2025-04-15,In Transit,Delay due to customs clearance.
