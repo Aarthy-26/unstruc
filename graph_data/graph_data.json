@@ -1,0 +1,641 @@
+{
+  "metadata": {
+    "description": "Graph Data Model extracted from Aarthy-26/unstruc repository",
+    "extraction_date": "2024-12-19",
+    "total_files_processed": 12,
+    "total_nodes": 42,
+    "total_edges": 32
+  },
+  "nodes": [
+    {
+      "id": "S001",
+      "type": "Supplier",
+      "properties": {
+        "name": "ABC Supplies Pvt Ltd",
+        "country": "India",
+        "contact": "raju@abc.com",
+        "rating": 4.2,
+        "lead_time_days": 7,
+        "preferred_terms": "Net30",
+        "last_audit": "2024-11-20"
+      }
+    },
+    {
+      "id": "S002",
+      "type": "Supplier",
+      "properties": {
+        "name": "Global Tech Traders",
+        "country": "China",
+        "contact": "sales@globaltech.cn",
+        "rating": 3.9,
+        "lead_time_days": 21,
+        "preferred_terms": "Prepaid",
+        "last_audit": "2023-09-15"
+      }
+    },
+    {
+      "id": "S003",
+      "type": "Supplier",
+      "properties": {
+        "name": "Delta Components",
+        "country": "Germany",
+        "contact": "info@delta.de",
+        "rating": 4.7
+      }
+    },
+    {
+      "id": "S004",
+      "type": "Supplier",
+      "properties": {
+        "name": "Rapid Parts Co",
+        "country": "USA",
+        "contact": "support@rapidparts.com",
+        "rating": 4.0
+      }
+    },
+    {
+      "id": "S005",
+      "type": "Supplier",
+      "properties": {
+        "name": "Oceanic Imports",
+        "country": "Malaysia",
+        "contact": "contact@oceanic.my",
+        "rating": 3.8
+      }
+    },
+    {
+      "id": "P1001",
+      "type": "Product",
+      "properties": {
+        "name": "18V Cordless Drill",
+        "category": "Tools",
+        "warehouse": "WH-A",
+        "qty": 120,
+        "reorder_level": 30
+      }
+    },
+    {
+      "id": "P1002",
+      "type": "Product",
+      "properties": {
+        "name": "Lithium Battery Pack",
+        "category": "Electronics",
+        "warehouse": "WH-B",
+        "qty": 450,
+        "reorder_level": 100
+      }
+    },
+    {
+      "id": "P1003",
+      "type": "Product",
+      "properties": {
+        "name": "Steel Bolts - M8",
+        "category": "Hardware",
+        "warehouse": "WH-A",
+        "qty": 5000,
+        "reorder_level": 2000
+      }
+    },
+    {
+      "id": "P1004",
+      "type": "Product",
+      "properties": {
+        "name": "Packaging Box - Large",
+        "category": "Packaging",
+        "warehouse": "WH-C",
+        "qty": 800,
+        "reorder_level": 150
+      }
+    },
+    {
+      "id": "WH-A",
+      "type": "Warehouse",
+      "properties": {
+        "name": "Warehouse A"
+      }
+    },
+    {
+      "id": "WH-B",
+      "type": "Warehouse",
+      "properties": {
+        "name": "Warehouse B"
+      }
+    },
+    {
+      "id": "WH-C",
+      "type": "Warehouse",
+      "properties": {
+        "name": "Warehouse C"
+      }
+    },
+    {
+      "id": "CUST100",
+      "type": "Customer",
+      "properties": {
+        "customer_id": "CUST100"
+      }
+    },
+    {
+      "id": "CUST101",
+      "type": "Customer",
+      "properties": {
+        "customer_id": "CUST101"
+      }
+    },
+    {
+      "id": "PO-2025-001",
+      "type": "PurchaseOrder",
+      "properties": {
+        "po_id": "PO-2025-001",
+        "supplier_id": "S001",
+        "date": "2025-04-01",
+        "status": "delivered"
+      }
+    },
+    {
+      "id": "PO-2025-002",
+      "type": "PurchaseOrder",
+      "properties": {
+        "po_id": "PO-2025-002",
+        "supplier_id": "S002",
+        "date": "2025-04-10",
+        "status": "in_transit"
+      }
+    },
+    {
+      "id": "PO-2025-003",
+      "type": "PurchaseOrder",
+      "properties": {
+        "po_id": "PO-2025-003",
+        "supplier_id": "S005",
+        "date": "2025-03-28",
+        "status": "pending"
+      }
+    },
+    {
+      "id": "INV-1001",
+      "type": "Invoice",
+      "properties": {
+        "invoice_id": "INV-1001",
+        "po_id": "PO-2025-001",
+        "supplier": "ABC Supplies Pvt Ltd",
+        "amount": 12500.5,
+        "due_date": "2025-04-30",
+        "status": "paid"
+      }
+    },
+    {
+      "id": "INV-1002",
+      "type": "Invoice",
+      "properties": {
+        "invoice_id": "INV-1002",
+        "po_id": "PO-2025-003",
+        "supplier": "Oceanic Imports",
+        "amount": 4500.0,
+        "due_date": "2025-05-15",
+        "status": "unpaid"
+      }
+    },
+    {
+      "id": "SHP1001",
+      "type": "Shipment",
+      "properties": {
+        "shipment_id": "SHP1001",
+        "po_id": "PO-2025-001",
+        "carrier": "BlueLine Logistics",
+        "eta": "2025-04-05",
+        "status": "Delivered",
+        "notes": "Arrived with minor packaging damage - inspected"
+      }
+    },
+    {
+      "id": "SHP1002",
+      "type": "Shipment",
+      "properties": {
+        "shipment_id": "SHP1002",
+        "po_id": "PO-2025-002",
+        "carrier": "FastTrack",
+        "eta": "2025-04-15",
+        "status": "In Transit",
+        "notes": "Delay due to customs clearance."
+      }
+    },
+    {
+      "id": "BlueLine_Logistics",
+      "type": "Carrier",
+      "properties": {
+        "name": "BlueLine Logistics"
+      }
+    },
+    {
+      "id": "FastTrack",
+      "type": "Carrier",
+      "properties": {
+        "name": "FastTrack"
+      }
+    },
+    {
+      "id": "Chennai_Port",
+      "type": "Location",
+      "properties": {
+        "name": "Chennai Port",
+        "type": "Port"
+      }
+    },
+    {
+      "id": "India",
+      "type": "Country",
+      "properties": {
+        "name": "India"
+      }
+    },
+    {
+      "id": "China",
+      "type": "Country",
+      "properties": {
+        "name": "China"
+      }
+    },
+    {
+      "id": "Germany",
+      "type": "Country",
+      "properties": {
+        "name": "Germany"
+      }
+    },
+    {
+      "id": "USA",
+      "type": "Country",
+      "properties": {
+        "name": "USA"
+      }
+    },
+    {
+      "id": "Malaysia",
+      "type": "Country",
+      "properties": {
+        "name": "Malaysia"
+      }
+    },
+    {
+      "id": "Audit_2024_Q4",
+      "type": "AuditReport",
+      "properties": {
+        "period": "2024 Q4",
+        "summary": "S001 minor non-conformances in labeling"
+      }
+    },
+    {
+      "id": "Meeting_2025_04_07",
+      "type": "Meeting",
+      "properties": {
+        "date": "2025-04-07",
+        "topic": "vendor consolidation and lead-time improvements"
+      }
+    },
+    {
+      "id": "Inventory_Sync_System",
+      "type": "System",
+      "properties": {
+        "name": "Inventory Sync System",
+        "function": "routine inventory synchronization"
+      }
+    },
+    {
+      "id": "Net30",
+      "type": "PaymentTerms",
+      "properties": {
+        "terms": "Net30"
+      }
+    },
+    {
+      "id": "Prepaid",
+      "type": "PaymentTerms",
+      "properties": {
+        "terms": "Prepaid"
+      }
+    },
+    {
+      "id": "Routine_Sync",
+      "type": "Process",
+      "properties": {
+        "name": "Routine Sync",
+        "type": "inventory synchronization"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "S001",
+      "target": "Audit_2024_Q4",
+      "type": "has_audit_finding",
+      "properties": {
+        "finding": "minor non-conformances in labeling"
+      }
+    },
+    {
+      "source": "CUST100",
+      "target": "P1001",
+      "type": "rated",
+      "properties": {
+        "rating": 4,
+        "comment": "Drill works well but battery life shorter than expected.",
+        "date": "2025-04-05"
+      }
+    },
+    {
+      "source": "CUST101",
+      "target": "P1004",
+      "type": "rated",
+      "properties": {
+        "rating": 5,
+        "comment": "Boxes arrived sturdy and on time.",
+        "date": "2025-04-12"
+      }
+    },
+    {
+      "source": "P1001",
+      "target": "WH-A",
+      "type": "stored_in",
+      "properties": {
+        "quantity": 120
+      }
+    },
+    {
+      "source": "P1002",
+      "target": "WH-B",
+      "type": "stored_in",
+      "properties": {
+        "quantity": 450
+      }
+    },
+    {
+      "source": "P1003",
+      "target": "WH-A",
+      "type": "stored_in",
+      "properties": {
+        "quantity": 5000
+      }
+    },
+    {
+      "source": "P1004",
+      "target": "WH-C",
+      "type": "stored_in",
+      "properties": {
+        "quantity": 800
+      }
+    },
+    {
+      "source": "INV-1001",
+      "target": "PO-2025-001",
+      "type": "references",
+      "properties": {
+        "amount": 12500.5
+      }
+    },
+    {
+      "source": "INV-1001",
+      "target": "S001",
+      "type": "from_supplier",
+      "properties": {
+        "status": "paid"
+      }
+    },
+    {
+      "source": "INV-1002",
+      "target": "PO-2025-003",
+      "type": "references",
+      "properties": {
+        "amount": 4500.0
+      }
+    },
+    {
+      "source": "INV-1002",
+      "target": "S005",
+      "type": "from_supplier",
+      "properties": {
+        "status": "unpaid"
+      }
+    },
+    {
+      "source": "WH-A",
+      "target": "P1003",
+      "type": "has_discrepancy",
+      "properties": {
+        "discrepancy": "-150 units",
+        "date": "2025-04-02"
+      }
+    },
+    {
+      "source": "PO-2025-002",
+      "target": "Chennai_Port",
+      "type": "delayed_at",
+      "properties": {
+        "reason": "documentation mismatch",
+        "date": "2025-04-11"
+      }
+    },
+    {
+      "source": "P1002",
+      "target": "WH-B",
+      "type": "relocated_from",
+      "properties": {
+        "reason": "temp spike",
+        "date": "2025-04-20"
+      }
+    },
+    {
+      "source": "Meeting_2025_04_07",
+      "target": "S001",
+      "type": "action_renegotiate",
+      "properties": {
+        "action": "renegotiate terms"
+      }
+    },
+    {
+      "source": "Meeting_2025_04_07",
+      "target": "S002",
+      "type": "action_audit",
+      "properties": {
+        "action": "audit S002"
+      }
+    },
+    {
+      "source": "PO-2025-001",
+      "target": "S001",
+      "type": "from_supplier",
+      "properties": {
+        "date": "2025-04-01",
+        "status": "delivered"
+      }
+    },
+    {
+      "source": "PO-2025-001",
+      "target": "P1001",
+      "type": "contains_item",
+      "properties": {
+        "quantity": 50
+      }
+    },
+    {
+      "source": "PO-2025-001",
+      "target": "P1003",
+      "type": "contains_item",
+      "properties": {
+        "quantity": 2000
+      }
+    },
+    {
+      "source": "PO-2025-002",
+      "target": "S002",
+      "type": "from_supplier",
+      "properties": {
+        "date": "2025-04-10",
+        "status": "in_transit"
+      }
+    },
+    {
+      "source": "PO-2025-002",
+      "target": "P1002",
+      "type": "contains_item",
+      "properties": {
+        "quantity": 300
+      }
+    },
+    {
+      "source": "PO-2025-003",
+      "target": "S005",
+      "type": "from_supplier",
+      "properties": {
+        "date": "2025-03-28",
+        "status": "pending"
+      }
+    },
+    {
+      "source": "PO-2025-003",
+      "target": "P1004",
+      "type": "contains_item",
+      "properties": {
+        "quantity": 500
+      }
+    },
+    {
+      "source": "SHP1001",
+      "target": "Chennai_Port",
+      "type": "arrived_at",
+      "properties": {
+        "timestamp": "2025-04-02T08:00:00"
+      }
+    },
+    {
+      "source": "SHP1001",
+      "target": "WH-A",
+      "type": "delivered_to",
+      "properties": {
+        "timestamp": "2025-04-03T14:00:00"
+      }
+    },
+    {
+      "source": "SHP1002",
+      "target": "Chennai_Port",
+      "type": "in_transit_from",
+      "properties": {
+        "status": "Customs Hold",
+        "timestamp": "2025-04-12T09:00:00"
+      }
+    },
+    {
+      "source": "SHP1001",
+      "target": "PO-2025-001",
+      "type": "fulfills",
+      "properties": {
+        "status": "Delivered"
+      }
+    },
+    {
+      "source": "SHP1001",
+      "target": "BlueLine_Logistics",
+      "type": "carried_by",
+      "properties": {}
+    },
+    {
+      "source": "SHP1002",
+      "target": "PO-2025-002",
+      "type": "fulfills",
+      "properties": {
+        "status": "In Transit"
+      }
+    },
+    {
+      "source": "SHP1002",
+      "target": "FastTrack",
+      "type": "carried_by",
+      "properties": {}
+    },
+    {
+      "source": "S001",
+      "target": "Net30",
+      "type": "has_payment_terms",
+      "properties": {
+        "lead_time_days": 7
+      }
+    },
+    {
+      "source": "S002",
+      "target": "Prepaid",
+      "type": "has_payment_terms",
+      "properties": {
+        "lead_time_days": 21
+      }
+    },
+    {
+      "source": "S001",
+      "target": "India",
+      "type": "located_in",
+      "properties": {
+        "contact": "raju@abc.com"
+      }
+    },
+    {
+      "source": "S002",
+      "target": "China",
+      "type": "located_in",
+      "properties": {
+        "contact": "sales@globaltech.cn"
+      }
+    },
+    {
+      "source": "S003",
+      "target": "Germany",
+      "type": "located_in",
+      "properties": {
+        "contact": "info@delta.de"
+      }
+    },
+    {
+      "source": "S004",
+      "target": "USA",
+      "type": "located_in",
+      "properties": {
+        "contact": "support@rapidparts.com"
+      }
+    },
+    {
+      "source": "S005",
+      "target": "Malaysia",
+      "type": "located_in",
+      "properties": {
+        "contact": "contact@oceanic.my"
+      }
+    },
+    {
+      "source": "Inventory_Sync_System",
+      "target": "Routine_Sync",
+      "type": "performs",
+      "properties": {
+        "frequency": "routine",
+        "type": "inventory synchronization"
+      }
+    }
+  ]
+}
