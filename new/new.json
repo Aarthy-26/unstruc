@@ -1,0 +1,379 @@
+{
+  "nodes": [
+    {
+      "id": "rajesh_001",
+      "type": "Person",
+      "properties": {
+        "name": "Rajesh",
+        "position": "Procurement Head",
+        "organization": "Alpha Manufacturing"
+      }
+    },
+    {
+      "id": "sneha_001",
+      "type": "Person",
+      "properties": {
+        "name": "Sneha",
+        "position": "Logistics Coordinator",
+        "organization": "Beta Industries"
+      }
+    },
+    {
+      "id": "amit_001",
+      "type": "Person",
+      "properties": {
+        "name": "Amit",
+        "position": "Supply Manager"
+      }
+    },
+    {
+      "id": "priya_001",
+      "type": "Person",
+      "properties": {
+        "name": "Priya",
+        "position": "Vendor Relations"
+      }
+    },
+    {
+      "id": "thomas_001",
+      "type": "Person",
+      "properties": {
+        "name": "Thomas",
+        "position": "QA"
+      }
+    },
+    {
+      "id": "alpha_manufacturing",
+      "type": "Organization",
+      "properties": {
+        "name": "Alpha Manufacturing",
+        "type": "Manufacturing Company"
+      }
+    },
+    {
+      "id": "intech_suppliers",
+      "type": "Organization",
+      "properties": {
+        "name": "Intech Suppliers",
+        "type": "Supplier"
+      }
+    },
+    {
+      "id": "beta_industries",
+      "type": "Organization",
+      "properties": {
+        "name": "Beta Industries",
+        "type": "Industrial Company"
+      }
+    },
+    {
+      "id": "delta_builders",
+      "type": "Organization",
+      "properties": {
+        "name": "Delta Builders",
+        "type": "Construction Company"
+      }
+    },
+    {
+      "id": "omkar_traders",
+      "type": "Organization",
+      "properties": {
+        "name": "Omkar Traders",
+        "type": "Vendor"
+      }
+    },
+    {
+      "id": "mumbai_port",
+      "type": "Location",
+      "properties": {
+        "name": "Mumbai Port",
+        "type": "Port"
+      }
+    },
+    {
+      "id": "pune",
+      "type": "Location",
+      "properties": {
+        "name": "Pune",
+        "type": "City"
+      }
+    },
+    {
+      "id": "raw_materials",
+      "type": "Product",
+      "properties": {
+        "name": "Raw Materials",
+        "category": "Materials"
+      }
+    },
+    {
+      "id": "cem_458",
+      "type": "Product",
+      "properties": {
+        "name": "Cement Batch",
+        "batch_id": "CEM-458",
+        "category": "Construction Material"
+      }
+    },
+    {
+      "id": "com_324",
+      "type": "Product",
+      "properties": {
+        "name": "Component",
+        "component_id": "COM-324",
+        "status": "Failed Quality Inspection",
+        "defect_type": "Surface defects"
+      }
+    },
+    {
+      "id": "intech_batch",
+      "type": "Product",
+      "properties": {
+        "name": "Intech Batch",
+        "supplier": "Intech Suppliers"
+      }
+    },
+    {
+      "id": "shp_992",
+      "type": "Shipment",
+      "properties": {
+        "shipment_id": "SHP-992",
+        "status": "Invoice generation failed twice"
+      }
+    },
+    {
+      "id": "shp_1001",
+      "type": "Shipment",
+      "properties": {
+        "shipment_id": "SHP-1001",
+        "status": "Pending invoice generation"
+      }
+    },
+    {
+      "id": "barcode_scanner",
+      "type": "System",
+      "properties": {
+        "name": "Barcode Scanner",
+        "issue": "Not syncing properly"
+      }
+    },
+    {
+      "id": "central_system",
+      "type": "System",
+      "properties": {
+        "name": "Central System",
+        "type": "Database System"
+      }
+    },
+    {
+      "id": "tracking_dashboard",
+      "type": "System",
+      "properties": {
+        "name": "Tracking Dashboard",
+        "issue": "ETA prediction off by 1-2 days"
+      }
+    },
+    {
+      "id": "api",
+      "type": "System",
+      "properties": {
+        "name": "API",
+        "status": "Potentially down between 2nd-5th Sep"
+      }
+    },
+    {
+      "id": "drive",
+      "type": "System",
+      "properties": {
+        "name": "Drive",
+        "type": "File Storage"
+      }
+    },
+    {
+      "id": "qa_report",
+      "type": "Document",
+      "properties": {
+        "name": "QA Report",
+        "location": "Drive/Inspection Reports/August"
+      }
+    },
+    {
+      "id": "invoice_shp992",
+      "type": "Document",
+      "properties": {
+        "name": "Invoice",
+        "shipment": "SHP-992",
+        "status": "Failed twice"
+      }
+    },
+    {
+      "id": "invoice_shp1001",
+      "type": "Document",
+      "properties": {
+        "name": "Invoice",
+        "shipment": "SHP-1001",
+        "status": "To be generated before dispatch"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "rajesh_001",
+      "target": "alpha_manufacturing",
+      "type": "works_at",
+      "properties": {
+        "position": "Procurement Head"
+      }
+    },
+    {
+      "source": "sneha_001",
+      "target": "beta_industries",
+      "type": "works_at",
+      "properties": {
+        "position": "Logistics Coordinator"
+      }
+    },
+    {
+      "source": "rajesh_001",
+      "target": "intech_suppliers",
+      "type": "mentioned_delays_from",
+      "properties": {
+        "issue": "Raw material delivery delays",
+        "date": "23rd Aug 2025"
+      }
+    },
+    {
+      "source": "intech_suppliers",
+      "target": "pune",
+      "type": "delivered_to",
+      "properties": {
+        "expected_date": "19th Aug",
+        "actual_date": "22nd Aug",
+        "delay": "3 days"
+      }
+    },
+    {
+      "source": "intech_suppliers",
+      "target": "raw_materials",
+      "type": "supplies",
+      "properties": {
+        "delivery_status": "Delayed"
+      }
+    },
+    {
+      "source": "sneha_001",
+      "target": "cem_458",
+      "type": "faced_stock_mismatches_for",
+      "properties": {
+        "issue": "Repeated stock mismatches"
+      }
+    },
+    {
+      "source": "barcode_scanner",
+      "target": "central_system",
+      "type": "syncs_with",
+      "properties": {
+        "status": "Not syncing properly"
+      }
+    },
+    {
+      "source": "delta_builders",
+      "target": "tracking_dashboard",
+      "type": "reviewed",
+      "properties": {
+        "feedback": "Looks good but ETA prediction off"
+      }
+    },
+    {
+      "source": "invoice_shp992",
+      "target": "shp_992",
+      "type": "generated_for",
+      "properties": {
+        "status": "Failed twice before succeeding"
+      }
+    },
+    {
+      "source": "omkar_traders",
+      "target": "com_324",
+      "type": "failed_quality_inspection_for",
+      "properties": {
+        "reason": "Surface defects",
+        "date": "15th Sept 2025"
+      }
+    },
+    {
+      "source": "thomas_001",
+      "target": "com_324",
+      "type": "suggested_reinspection_for",
+      "properties": {
+        "action": "Reinspection request"
+      }
+    },
+    {
+      "source": "priya_001",
+      "target": "omkar_traders",
+      "type": "drafts_escalation_to",
+      "properties": {
+        "deadline": "18th Sept",
+        "type": "Escalation email"
+      }
+    },
+    {
+      "source": "priya_001",
+      "target": "mumbai_port",
+      "type": "sent_documents_to",
+      "properties": {
+        "day": "Tuesday",
+        "purpose": "Customs clearance"
+      }
+    },
+    {
+      "source": "thomas_001",
+      "target": "qa_report",
+      "type": "uploaded",
+      "properties": {
+        "location": "Drive/Inspection Reports/August"
+      }
+    },
+    {
+      "source": "qa_report",
+      "target": "drive",
+      "type": "stored_in",
+      "properties": {
+        "folder": "Inspection Reports/August"
+      }
+    },
+    {
+      "source": "amit_001",
+      "target": "invoice_shp1001",
+      "type": "ensures_generation_of",
+      "properties": {
+        "requirement": "Before dispatch"
+      }
+    },
+    {
+      "source": "invoice_shp1001",
+      "target": "shp_1001",
+      "type": "generated_for",
+      "properties": {
+        "status": "Pending"
+      }
+    },
+    {
+      "source": "amit_001",
+      "target": "intech_batch",
+      "type": "inquired_about",
+      "properties": {
+        "topic": "Customs clearance update"
+      }
+    },
+    {
+      "source": "api",
+      "target": "central_system",
+      "type": "connects_to",
+      "properties": {
+        "potential_downtime": "2nd-5th Sep"
+      }
+    }
+  ]
+}
