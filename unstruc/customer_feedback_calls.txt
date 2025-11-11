@@ -1,0 +1,29 @@
+Call with Rajesh (Procurement Head, Alpha Manufacturing) - 23rd Aug 2025:
+He mentioned delays in raw material delivery from Intech Suppliers last week. The shipment was supposed to reach Pune on 19th Aug but arrived on 22nd. Rajesh said this affected their production schedule and wants faster customs clearance next time.
+
+---
+
+Email from Sneha (Logistics Coordinator, Beta Industries):
+We faced repeated stock mismatches for the cement batch ID CEM-458. The warehouse team says the barcode scanner wasn’t syncing properly with the central system. Can IT check if the API was down between 2nd and 5th Sep?
+
+---
+
+Customer review - Delta Builders:
+“The new tracking dashboard looks good but the ETA prediction is still off by a day or two. Also, invoice generation for shipment SHP-992 failed twice before succeeding.”
+
+---
+
+Meeting notes (15th Sept 2025):
+Participants: Amit (Supply Manager), Priya (Vendor Relations), and Thomas (QA)
+Discussion summary:
+- Vendor “Omkar Traders” failed quality inspection for component COM-324 due to surface defects.
+- Thomas suggested initiating a reinspection request.
+- Priya to draft an escalation email to Omkar Traders by 18th Sept.
+
+---
+
+WhatsApp Chat Extract (Operations Group):
+[Amit]: Any update on the customs clearance for Intech batch?
+[Priya]: Documents sent to Mumbai Port on Tuesday.
+[Thomas]: QA report uploaded in Drive under folder “Inspection Reports/August”.
+[Amit]: Okay, let’s ensure invoice for SHP-1001 is generated before dispatch.
