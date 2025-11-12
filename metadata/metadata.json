@@ -1,0 +1,178 @@
+{
+  "input_folder": "unstruc",
+  "generated_at": "2024-12-19T10:30:00Z",
+  "file_count": 18,
+  "files": [
+    {
+      "file_name": "audit_report_2024_q4.txt",
+      "file_type": "txt",
+      "file_size_bytes": 89,
+      "encoding": "utf-8",
+      "content_summary": "Audit summary: S001 minor non-conformances in labeling. Corrective actions recorded."
+    },
+    {
+      "file_name": "contracts.docx",
+      "file_type": "docx",
+      "file_size_bytes": null,
+      "encoding": "binary",
+      "content_summary": "Binary file (Microsoft Word document) - Cannot decode binary content as text"
+    },
+    {
+      "file_name": "customer_feedback.txt",
+      "file_type": "txt",
+      "file_size_bytes": 273,
+      "encoding": "utf-8",
+      "content_summary": "Customer Feedback Log:\n- 2025-04-05 | CustID:CUST100 | Product:P1001 | Rating:4 | Comment: \"Drill works well but battery life shorter than expected.\"\n- 2025-04-12 | CustID:CUST101 | Product:P1004 | Rating:5 | Comment: \"Boxes arrived sturdy and on time.\""
+    },
+    {
+      "file_name": "customer_feedback_calls.txt",
+      "file_type": "txt",
+      "file_size_bytes": 1444,
+      "encoding": "utf-8",
+      "content_summary": "Call with Rajesh (Procurement Head, Alpha Manufacturing) - 23rd Aug 2025:\nHe mentioned delays in raw material delivery from Intech Suppliers last week. The shipment was supposed to reach Pune on 19th Aug but arrived on 22nd..."
+    },
+    {
+      "file_name": "inventory.csv",
+      "file_type": "csv",
+      "file_size_bytes": 267,
+      "num_records": 4,
+      "num_columns": 6,
+      "columns": [
+        {"name": "item_id", "type": "string"},
+        {"name": "name", "type": "string"},
+        {"name": "category", "type": "string"},
+        {"name": "warehouse", "type": "string"},
+        {"name": "qty", "type": "integer"},
+        {"name": "reorder_level", "type": "integer"}
+      ],
+      "encoding": "utf-8",
+      "sample_data": "P1001,18V Cordless Drill,Tools,WH-A,120,30\nP1002,Lithium Battery Pack,Electronics,WH-B,450,100"
+    },
+    {
+      "file_name": "invoice_INV-1001.pdf",
+      "file_type": "pdf",
+      "file_size_bytes": null,
+      "encoding": "binary",
+      "content_summary": "Binary file (PDF document) - Cannot decode binary content as text"
+    },
+    {
+      "file_name": "invoice_INV-1002.pdf",
+      "file_type": "pdf",
+      "file_size_bytes": null,
+      "encoding": "binary",
+      "content_summary": "Binary file (PDF document) - Cannot decode binary content as text"
+    },
+    {
+      "file_name": "invoices_2025_01.csv",
+      "file_type": "csv",
+      "file_size_bytes": 186,
+      "num_records": 2,
+      "num_columns": 6,
+      "columns": [
+        {"name": "invoice_id", "type": "string"},
+        {"name": "po_id", "type": "string"},
+        {"name": "supplier", "type": "string"},
+        {"name": "amount", "type": "float"},
+        {"name": "due_date", "type": "date"},
+        {"name": "status", "type": "string"}
+      ],
+      "encoding": "utf-8",
+      "sample_data": "INV-1001,PO-2025-001,ABC Supplies Pvt Ltd,12500.5,2025-04-30,paid\nINV-1002,PO-2025-003,Oceanic Imports,4500.0,2025-05-15,unpaid"
+    },
+    {
+      "file_name": "logistics_notes.txt",
+      "file_type": "txt",
+      "file_size_bytes": 327,
+      "encoding": "utf-8",
+      "content_summary": "Logistics Daily Notes - Apr 2025\n- 2025-04-02: WH-A conducting cycle count. Found discrepancy for P1003 ~ -150 units.\n- 2025-04-11: Container delayed at Chennai port due to documentation mismatch (PO PO-2025-002)..."
+    },
+    {
+      "file_name": "notes_meeting_2025_04_07.txt",
+      "file_type": "txt",
+      "file_size_bytes": 122,
+      "encoding": "utf-8",
+      "content_summary": "Meeting notes: Discussed vendor consolidation and lead-time improvements.\nActions: Audit S002, renegotiate S001 terms."
+    },
+    {
+      "file_name": "po_2025_04.docx",
+      "file_type": "docx",
+      "file_size_bytes": null,
+      "encoding": "binary",
+      "content_summary": "Binary file (Microsoft Word document) - Cannot decode binary content as text"
+    },
+    {
+      "file_name": "product_catalog.xlsx",
+      "file_type": "xlsx",
+      "file_size_bytes": null,
+      "encoding": "binary",
+      "content_summary": "Binary file (Microsoft Excel document) - Cannot decode binary content as text"
+    },
+    {
+      "file_name": "purchase_orders.json",
+      "file_type": "json",
+      "file_size_bytes": 652,
+      "num_records": 3,
+      "encoding": "utf-8",
+      "content_summary": "Array of purchase orders with fields: po_id, supplier_id, date, items, status",
+      "sample_data": "First record - PO-2025-001 from supplier S001 with status delivered"
+    },
+    {
+      "file_name": "shipment_tracking.json",
+      "file_type": "json",
+      "file_size_bytes": 378,
+      "num_records": 2,
+      "encoding": "utf-8",
+      "content_summary": "Object with shipment IDs as keys, each containing arrays of tracking events",
+      "sample_data": "SHP1001 with 2 tracking events from Chennai Port to WH-A"
+    },
+    {
+      "file_name": "shipments.csv",
+      "file_type": "csv",
+      "file_size_bytes": 226,
+      "num_records": 2,
+      "num_columns": 6,
+      "columns": [
+        {"name": "shipment_id", "type": "string"},
+        {"name": "po_id", "type": "string"},
+        {"name": "carrier", "type": "string"},
+        {"name": "eta", "type": "date"},
+        {"name": "status", "type": "string"},
+        {"name": "notes", "type": "string"}
+      ],
+      "encoding": "utf-8",
+      "sample_data": "SHP1001,PO-2025-001,BlueLine Logistics,2025-04-05,Delivered,Arrived with minor packaging damage - inspected\nSHP1002,PO-2025-002,FastTrack,2025-04-15,In Transit,Delay due to customs clearance."
+    },
+    {
+      "file_name": "supplier_metadata.json",
+      "file_type": "json",
+      "file_size_bytes": 200,
+      "num_records": 2,
+      "encoding": "utf-8",
+      "content_summary": "Object with supplier IDs as keys, each containing lead_time_days, preferred_terms, last_audit",
+      "sample_data": "S001 with 7 days lead time, Net30 terms, last audit 2024-11-20"
+    },
+    {
+      "file_name": "suppliers.csv",
+      "file_type": "csv",
+      "file_size_bytes": 316,
+      "num_records": 5,
+      "num_columns": 5,
+      "columns": [
+        {"name": "supplier_id", "type": "string"},
+        {"name": "name", "type": "string"},
+        {"name": "country", "type": "string"},
+        {"name": "contact", "type": "string"},
+        {"name": "rating", "type": "float"}
+      ],
+      "encoding": "utf-8",
+      "sample_data": "S001,ABC Supplies Pvt Ltd,India,raju@abc.com,4.2\nS002,Global Tech Traders,China,sales@globaltech.cn,3.9"
+    },
+    {
+      "file_name": "timestamps.log",
+      "file_type": "log",
+      "file_size_bytes": 730,
+      "encoding": "utf-8",
+      "content_summary": "2025-11-01T19:26:06.065306Z - INFO - Routine inventory sync completed\\n2025-11-09T02:26:06.065324Z - INFO - Routine inventory sync completed\\n2025-11-05T06:26:06.065328Z - INFO - Routine inventory sync completed..."
+    }
+  ]
+}
